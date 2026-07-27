@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Open VIP can improve the speed of decompilation, resource code translate to name automatically and activate the smart editing and automatic completion function-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="203897"
+    android:versionName="0.39.2"
+    android:installLocation="2"
+    android:compileSdkVersion="36"
+    android:compileSdkVersionCodename="16"
+    package="com.axlebolt.standoff2"
+    platformBuildVersionCode="36"
+    platformBuildVersionName="16">
+    <uses-sdk
+        android:minSdkVersion="25"
+        android:targetSdkVersion="36" />
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <!-- Неограниченный доступ к интернету -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Неограниченный доступ к интернету -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Отключение спящего режима -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Просмотр сетевых подключений -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Просмотр подключений Wi-Fi -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Изменение или удаление данных на общем накопителе -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <!-- Просмотр данных на общем накопителе -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <!-- Запросы на удаление пакетов -->
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- Запись аудио -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- Установление соединения с устройствами Bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- Доступ к подключенным устройствам Bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- Изменение настроек аудио -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- Считывание аудиофайлов из общего хранилища -->
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.adjust.preinstall.READ_PERMISSION" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <!-- Управление функцией вибросигнала -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:glEsVersion="0x30000" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+    <queries>
+        <package android:name="com.facebook.katana" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="com.vk.silentauth.action.GET_INFO" />
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT" />
+            <data android:mimeType="vnd.android.cursor.dir/event" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="sms" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+            <data android:path="tel:" />
+        </intent>
+        <intent>
+            <action android:name="com.attribution.REFERRAL_PROVIDER" />
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND" />
+        </intent>
+        <package android:name="com.google.android.gms" />
+        <package android:name="com.android.vending" />
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+        <intent>
+            <action android:name="com.digitalturbine.ignite.cl.IgniteRemoteService" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="*/*" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND_MULTIPLE" />
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- Показ уведомлений -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <!-- Запуск активных сервисов -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.amazon.privacypass.ATTEST" />
+    <permission
+        android:name="com.axlebolt.standoff2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="0x00000002" />
+    <uses-permission android:name="com.axlebolt.standoff2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <permission
+        android:name="com.axlebolt.standoff2.permission.C2D_MESSAGE"
+        android:protectionLevel="0x00000002" />
+    <uses-permission android:name="com.axlebolt.standoff2.permission.C2D_MESSAGE" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <application
+        android:label="@7F12002C"
+        android:icon="@7F0F0000"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true"
+        android:extractNativeLibs="true"
+        android:roundIcon="@7F0F0001"
+        android:appCategory="0"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true"
+        android:allowNativeHeapPointerTagging="false"
+        android:enableOnBackInvokedCallback="true">
+        <receiver
+            android:name="com.adjust.sdk.AdjustPreinstallReferrerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.attribution.SYSTEM_INSTALLER_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.adjust.sdk.AdjustReferrerReceiver"
+            android:permission="android.permission.INSTALL_PACKAGES"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"
+            android:authorities="com.facebook.app.FacebookContentProvider752573801798020" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2825240708193036~6278588767" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@7F0B0006" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="fb752573801798020" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="687fccbdb103cbf056d21e7e6f8e68e8" />
+        <meta-data
+            android:name="google_analytics_automatic_screen_reporting_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.android.gms.games.unityVersion"
+            android:value="2.1.0" />
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="959787743929" />
+        <meta-data
+            android:name="com.google.android.gms.games.WEB_CLIENT_ID"
+            android:value="959787743929-9f7mlh2hh427m7qqtlhu3r7dakv15alt.apps.googleusercontent.com" />
+        <meta-data
+            android:name="com.google.android.gms.games.SUPPRESS_GAME_PROFILE_CREATION"
+            android:value="true" />
+        <meta-data
+            android:name="unity.splash-mode"
+            android:value="0" />
+        <meta-data...
+<!--Over the length of free decompile-->
